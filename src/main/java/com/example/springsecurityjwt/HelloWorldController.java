@@ -15,6 +15,10 @@ import com.example.springsecurityjwt.models.AuthenticationRequest;
 import com.example.springsecurityjwt.models.AuthenticationResponse;
 import com.example.springsecurityjwt.util.JwtUtil;
 
+/**
+ * @author controller page for testing.
+ *
+ */
 @RestController
 class HelloWorldController {
 
@@ -27,7 +31,7 @@ class HelloWorldController {
 	@Autowired
 	private MyUserDetailsService userDetailsService;
 
-	@RequestMapping({ "/home" })
+	@RequestMapping({ "/home" }) 
 	public String homePage() {
 		return "Hello World !!";
 	}
